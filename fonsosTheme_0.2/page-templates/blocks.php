@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesis Sample.
+ * Fonso_s Theme, based on Genesis Sample.
  *
  * A template to force full-width layout, remove breadcrumbs, and remove the page title.
  *
  * Template Name: Blocks
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Fonso_s Theme
+ * @author  Fonso_s
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    fonsos.com
  */
 
 // Removes the entry header markup and page title.

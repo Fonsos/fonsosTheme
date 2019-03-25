@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Fonso_s Theme, based on Genesis Sample.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the Fonso_s Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Fonso_s Theme
+ * @author  Fonso_s
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    fonsos.com
  */
 
 // Starts the engine.
