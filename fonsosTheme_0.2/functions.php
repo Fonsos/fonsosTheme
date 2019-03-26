@@ -258,3 +258,55 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+
+/* Fonso_s
+ *
+ * Añade y modifica elementos del theme
+ * 
+ */
+
+ //Añade el custom css
+add_action( 'wp_enqueue_scripts', 'wsm_custom_stylesheet', 20 );
+function wsm_custom_stylesheet() {
+    wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css' );
+}
+
+/*Registramos el Hero widget area*/
+genesis_register_sidebar( array(
+	'id' => 'hero-widget-area',
+	'name' => __('Hero Widget Area', 'genesis'),
+	'description' => __('Widget Area del encabezado de la Home', 'childtheme'),
+));
+
+/*Registramos el Section widget area*/
+genesis_register_sidebar( array(
+	'id' => 'section-widget-area',
+	'name' => __('Section Widget Area', 'genesis'),
+	'description' => __('Widget Area de las secciones de la Home', 'childtheme'),
+));
+
+/*Registramos el Foot Banner widget area*/
+genesis_register_sidebar( array(
+	'id' => 'footbanner-widget-area',
+	'name' => __('Foot Banner Widget Area', 'genesis'),
+	'description' => __('Widget del banner en el foot de la web', 'childtheme'),
+));
+
+/* No mostra botón edit*/
+add_filter ( 'genesis_edit_post_link' , '__return_false' );
+
+/*Eliminar título página Home*/
+add_action( 'get_header', 'remove_titles_from_pages' );
+
+function remove_titles_from_pages() {
+	if ( is_page_template( $template = 'front-page.php' )) {
+		remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+	}
+};
+
+/*FONT AWESOME*/
+add_action( 'wp_enqueue_scripts', 'load_font_awesome_icons' );
+function load_font_awesome_icons() { 
+    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.7.0/css/all.css'  ); 
+}
