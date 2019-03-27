@@ -253,7 +253,7 @@ input[type="submit"],
 	border: 0;
 	border-color: #303030;
 	border-radius: 10px;
-	color: #FAFAFA;
+	color: #111;
 	cursor: pointer;
 	font-family: 'Roboto Slab', serif;
 	font-size: 24px;
@@ -444,12 +444,12 @@ input[type="submit"].small {
 ---------------------------------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
-	line-height: 1.2;
+	line-height: 1;
 	width: 100%;
 }
 
 .genesis-nav-menu .menu-item {
-	margin: 10px 35px 5px 35px;
+	margin: 10px 35px 10px 35px;
 	text-align: center;
 	line-height: 1.2;
 }
@@ -481,11 +481,12 @@ input[type="submit"].small {
 .menu .menu-item > a:focus + ul.sub-menu,
 .menu .menu-item.sfHover > ul.sub-menu {
 	opacity: 0px;
+	max-height: 50px;
 }
 
-.genesis-responsive-menu {
+/*.genesis-responsive-menu {
 	padding-bottom: 15px;
-}
+}*/
 
 .menu-toggle,
 .sub-menu-toggle {
@@ -605,8 +606,8 @@ p.entry-meta {
 	}
 
 	.hero-description {
-		font-size: 2.5rem;
-		max-width: 700px;
+		font-size: 25px;
+		max-width: 800px;
 		margin: 40px auto 60px auto;
 		/*margin-bottom: 60px;*/
 	}
@@ -733,7 +734,7 @@ p.entry-meta {
 	.fs-home-post p {
 		margin-bottom: 0;
 		color: #111;
-		cursor: pointer;
+		/*cursor: pointer;*/
 		text-align: left;
 	}
 	
@@ -754,11 +755,11 @@ p.entry-meta {
 	.fs-blog:hover, .fs-blog:focus {
 		background: radial-gradient(200px at 50% 50%, rgba(241, 90, 90, 0.75) 0%, rgba(241, 90, 90, 0.25) 100%), #909090;
 		transition: all 1s ease-in-out;
-		cursor: pointer;
+		/*cursor: pointer;*/
 	}
 
 	.fs-button-blog, .fs-button-pods{
-		background: #909090;
+		background: #BABABA;
 		border-radius: 5px;
 		text-align: center;
 		box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
@@ -800,6 +801,14 @@ p.entry-meta {
 		text-align: center;
 		margin-bottom: 20px;
 		color: #111;
+	}
+
+	.section-button{
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
 	}
 
 
@@ -865,8 +874,9 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.nav-primary {
+		display: flex;
+		justify-content: center;
 		float: none;
-		text-align: center;
 	}
 
 	.nav-primary .genesis-nav-menu a {
@@ -874,6 +884,13 @@ p.entry-meta {
 		/*padding-top: -10px;*/
 	}
 
+	/* Site-Inner
+	--------------------------------------------- */
+
+	.site-inner {
+		margin-top: 50px;
+		max-width: 1400px;
+	}
 	
 	/* Content
 	--------------------------------------------- */
