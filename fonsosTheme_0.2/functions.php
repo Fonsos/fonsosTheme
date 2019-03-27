@@ -310,3 +310,9 @@ add_action( 'wp_enqueue_scripts', 'load_font_awesome_icons' );
 function load_font_awesome_icons() { 
     wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.7.0/css/all.css'  ); 
 }
+
+//* Remove the site description
+remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+
+//* Remove the site title
+remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
