@@ -196,7 +196,7 @@ h2 {
 }
 
 h2.entry-title {
-	font-size: 2rem;
+	font-size: 20px;
 }
 
 .entry-content h3,
@@ -586,6 +586,14 @@ p.entry-meta {
 	border: 0px;
 }
 
+.site-footer a{
+	color: #999;
+}
+
+.site-footer a:hover{
+	color: #BABABA;
+}
+
 
 /* Home
 	--------------------------------------------- */
@@ -833,7 +841,7 @@ p.entry-meta {
 		margin-right: 1%;
 	}
 
-	.post, .podcast {
+	.post, .podcast, .type-page{
 		margin: 30px 60px 30px 60px;
    		background-color: #BABABA;
 		border-radius: 5px;
@@ -849,6 +857,11 @@ p.entry-meta {
 
 .entry-footer, .entry-meta{
 	display: none;
+}
+
+.alignwide{
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 
@@ -872,8 +885,12 @@ p.entry-meta {
 	margin: 15px 0 25px 0;
 }
 
-.ssp-player.ssp-player-large h3.episode-title {
-	font-size: 20px;
+.ssp-player.ssp-player-large h3.episode-title{
+	font-size: 20px !important;
+}
+
+.ssp-player-series, .ssp-duration {
+	font-size: 18px !important;
 }
 
 /* Media Queries
