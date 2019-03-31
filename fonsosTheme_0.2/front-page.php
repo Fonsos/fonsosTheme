@@ -118,8 +118,8 @@ wp_reset_postdata();
 		
 		<img src="https://fonsos.com/wp-content/uploads/2019/01/fast-foward.png" alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image">
 		<h2 class="entry-title fs-entry-title"><a href="/blog/podcast">¿Quieres escuchar más?</a></h2>
-		<p><a href="/blog/podcast">Existen más episodios</a></p>
-		<div style="text-align: center;"><p><a class="button section-button fs-button-pods" href="/blog/podcast">Escuchar más</a></p></div>
+		<p><a href="/podcast">Existen más episodios</a></p>
+		<div style="text-align: center;"><p><a class="button section-button fs-button-pods" href="/podcast">Escuchar más</a></p></div>
 		
 		</div>
 
