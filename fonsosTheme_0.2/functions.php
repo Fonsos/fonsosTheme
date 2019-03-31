@@ -316,3 +316,23 @@ remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
 //* Remove the site title
 remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
+
+// Adds support for 4-column footer widgets.
+add_theme_support( 'genesis-footer-widgets', 4 );
+
+//* Customize Entry Meta Filed Under and Tagged Under - http://www.basicwp.com/?p=268
+/*add_filter( 'genesis_post_meta', 'ig_entry_meta_footer' );
+function ig_entry_meta_footer( $post_meta ) {
+	$post_meta = '[post_categories before="Categories: "] [post_tags before="Tags: "]';
+	return $post_meta;
+}*/
+
+//* Customize Entry Meta Filed Under and Tagged Under - http://www.basicwp.com/?p=268
+/*add_filter( 'genesis_post_meta', 'ig_entry_meta_footer' );
+function ig_entry_meta_footer( $post_meta ) {
+	$post_meta = '[post_categories before=""] [post_tags before=""]';
+	return $post_meta;
+}*/
+
+//* Remove the post meta function
+/*remove_action( 'genesis_entry_meta', 'genesis_entry_meta' );*/
